@@ -1,0 +1,11 @@
+
+.btn{
+  width: 80px;
+  aspect-ratio: 1/1;
+  border-radius: 1000px;
+  background-color:#f1845f ;
+}
+.btnPosition{
+  position: absolute;
+  top: 30%;
+}

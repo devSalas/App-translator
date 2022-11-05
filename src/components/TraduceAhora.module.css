@@ -1,0 +1,33 @@
+.container{
+  max-width: 576px;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 10% 10% 23% 4% 23% 30%;
+  place-items: center;
+  padding: 5%;
+}
+.select{
+  background-color: #fef9ef;
+  border-radius: 10px 10px 0px 0px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  
+}
+.contentToTraslate{
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.description{
+  background-color: #fef9ef;
+  border-radius: 20px;
+  overflow-y: scroll;
+  border: none;
+  min-height: 60px;
+  width: 100%;
+}
+.h2,.h4{
+  font-weight: 200;
+}
