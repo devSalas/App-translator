@@ -4,8 +4,51 @@
   aspect-ratio: 1/1;
   border-radius: 1000px;
   background-color:#f1845f ;
+  border:none;
+  margin: 0px 10px;
 }
 .btnPosition{
   position: absolute;
   top: 30%;
+}
+.camara{
+  width: 60px;
+  aspect-ratio: 1/1;
+  background-color:#9685ff ;
+  background-image: url('../assets/camera.svg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
+
+}
+.microfono{
+  width: 80px;
+  aspect-ratio: 1/1;
+  background-color:#ff865e ;
+  background-image: url('../assets/mic.svg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
+}
+.conversacion{
+  width: 60px;
+  aspect-ratio: 1/1;
+  background-color:#a2d2ff;
+  background-image: url('../assets/users.svg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
+}
+.invertir{
+  background-image: url('../assets/invertir.svg');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 50%;
+}
+.siguiente{
+  width: 60px;
+  background-image: url('../assets/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50%;
 }

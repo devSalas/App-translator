@@ -12,7 +12,7 @@ const Home = () => {
       </h1>
       <div className={stlyed.containerBtn}>
         <BtnBig text={"English"} color={"Secondary"}/>
-        <BtnSmall text={"hola"} position/>
+        <BtnSmall  position invertir/>
         <BtnBig text={"Spanish"}/>
       </div>
       <div>
@@ -20,7 +20,7 @@ const Home = () => {
       </div>
       <div>
         <Link to={"/traducirAhora"}>
-          <BtnSmall  text={"hola"}/>
+          <BtnSmall  siguiente/>
         </Link>
       </div>
 
