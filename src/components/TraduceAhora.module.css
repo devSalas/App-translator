@@ -3,25 +3,31 @@
   height: 100vh;
   background-color: white;
   display: grid;
-  grid-template-rows: 10% 10% 23% 4% 23% 30%;
-  place-items: center;
+  grid-template-rows: 10% 10% 38% 4% 38% 30%;
   padding: 5%;
+  margin: auto;
+  place-items: center;
+  background-color: rgb(227, 227, 233);
+  border-radius: 30px;
 }
 .select{
   background-color: #fef9ef;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   outline: none;
   border: none;
   padding: 5px;
-  
+  overflow: hidden;
+  place-self: center;
 }
 .contentToTraslate{
   display: grid;
-  place-items: center;
   width: 100%;
+  height: 100%;
+  
 }
 .description{
   width: 100%;
+  height: 99%;
 }
 .h2,.h4{
   font-weight: 200;
@@ -29,19 +35,38 @@
 .textarea{
   background-color: #fef9ef;
   border-radius: 20px;
-  padding:0% 4%;
+  padding:3% 4%;
   border: transparent;
   outline: none;
   resize: none;
-  height: 50px;
-  max-height: 60px;
+  height: 70px;
   width: 100%;
   overflow-y: scroll;
+
 }
+.textarea::-webkit-scrollbar {
+  display: none;
+}
+
 .textTraducido{
+  padding: 0;
   width: 100%;
-  height: 40px;
   background-color: #fef9ef;
   border-radius: 20px;
+  height:99%;
+  padding:3% 4%;
+}
+.BoxidiomaATraducir{
+  margin: auto;
+}
+.idiomaATraducir{
+  text-align: center;
+  margin: auto;
+  background-color: #fef9ef;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.keyboard{
+  width: 90px;
   height: 50px;
 }

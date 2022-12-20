@@ -16,7 +16,7 @@ const Home = () => {
         <BtnBig text={"Spanish"}/>
       </div>
       <div>
-       <h3> la traduccion ahora en tus manos</h3>
+       <h3> Comenzar a traducir</h3>
       </div>
       <div>
         <Link to={"/traducirAhora"}>

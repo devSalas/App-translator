@@ -6,8 +6,10 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+  
 }
 .container{
+  margin: auto;
   max-width: 576px;
   height: 100vh;
   padding: 4%;
@@ -15,4 +17,6 @@
   display: grid;
   grid-template-rows: 20% 40% 20% 20%;
   place-items: center;
+  border:1px solid black;
+  border-radius: 20px;
 }

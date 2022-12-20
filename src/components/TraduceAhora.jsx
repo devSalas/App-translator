@@ -5,6 +5,7 @@ import FetchTranslate from "../services/useFetch";
 const TraduceAhora = () => {
 
   const [word, setWord] = useState("");
+  const [idioma, setIdioma] = useState("English");
   const [send,setSend]= useState(false)
   const [resultado, setResultado] = useState("");
   const [error, setError] = useState("");
@@ -12,11 +13,11 @@ const TraduceAhora = () => {
 
   useEffect(() => {
     if(send){
-      console.log("se envio")
-       FetchTranslate(word.trim())
+     /*  console.log("se envio") */
+       FetchTranslate(word.trim(),idioma)
       .then(res=>{
         res.ok ?setResultado(res.data):setError(res)
-        console.log(res)
+       /*  console.log(res) */
         setSend(false)
       }
       ) 
@@ -26,7 +27,6 @@ const TraduceAhora = () => {
 
   
   const handleKeyDown = (e)=>{
-    console.log(e)
     if(e.key ==="Enter"){
       setSend(true)
       setResultado("")
@@ -34,27 +34,28 @@ const TraduceAhora = () => {
 
   }
   const handleChange = (e)=>{
-    console.log(e.target.value)
+   /*  console.log(e.target.value) */
     setWord(e.target.value)
 
+  }
+  const handleChangeSelect = (e)=>{
+    setIdioma(e.target.value)
+    console.log(e.target.value)
+    
   }
 
 
   return (  
     <div className={styled.container}>
 
-      <div>
-        <a href="">Quari Translate</a>
-        <img src="" alt="" />
-      </div>
-
-      <h2 className={styled.h2}>Quick translation</h2>
-
+      <h2 className={styled.h2}>TRADUCE ALTOQUE</h2>
+      <h4>presione <span><img className={styled.keyboard} src="/src/assets/enter.jpg" alt="" /></span> para comenzar a traducir</h4>
+      
       <div className={styled.contentToTraslate}>
 
-        <select name="" id="" className={styled.select}>
-          <option value="a" >Spanish</option>
-          <option value="a">English</option>
+        <select  onChange={handleChangeSelect} id="" className={styled.select}>
+          <option value="English">English a Spanish</option>
+          <option value="Spanish" >Spanish a English</option>
         </select>
 
         <div className={styled.description}>
@@ -70,10 +71,14 @@ const TraduceAhora = () => {
 
       <div className={styled.contentToTraslate}>
 
-        <select  name="" id="" className={styled.select}>
-          <option value="spanish" >Spanish</option>
-          <option value="" >English</option>
-        </select>
+        <div className={styled.BoxidiomaATraducir} >
+          <div className={styled.idiomaATraducir}>
+          {
+            idioma=="English" ?"Spanish" :"English"
+          }
+          </div>
+          
+        </div>
 
         <div className={styled.description}>
 
@@ -85,11 +90,6 @@ const TraduceAhora = () => {
 
       </div>
 
-      <div>
-        <BtnSmall conversacion/>
-        <BtnSmall microfono/>
-        <BtnSmall camara/>
-      </div>
       
     </div>
    );

@@ -1,6 +1,9 @@
 /* mobile first */
 
-@media screen and (min-width:577px) and (max-width: 992px)   {
+
+
+
+/* @media screen and (min-width:577px) and (max-width: 992px)   {
   .container {
     background-color: lightgreen;
   }
@@ -14,4 +17,4 @@
   .container {
     background-color: wheat;
   }
-}
+} */

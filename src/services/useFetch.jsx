@@ -1,9 +1,20 @@
-const FetchTranslate = async(word)=> {
+const FetchTranslate = async(word,idioma)=> {
+  let Idioma=idioma
+  let aIdioma
 
+  if(idioma== "" || idioma== "English"){
+    Idioma="en"
+    aIdioma="es"
+  }else{
+    console.log("entro")
+    Idioma="es"
+    aIdioma="en"
+  }
+  console.log(Idioma,aIdioma)
   const encodedParams = new URLSearchParams();
   encodedParams.append("q",word);
-  encodedParams.append("target", "es");
-  encodedParams.append("source", "en");
+  encodedParams.append("target",aIdioma);
+  encodedParams.append("source", Idioma);
   
   const options = {
     method: 'POST',

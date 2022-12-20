@@ -7,8 +7,8 @@ const Translate = () => {
   return ( 
     <div className={styled.container}>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/traducirAhora" element={<TraduceAhora/>}/>
+        {/* <Route path="/" element={<Home/>}/> */}
+        <Route path="/" element={<TraduceAhora/>}/>
       </Routes>
     </div>
    );
