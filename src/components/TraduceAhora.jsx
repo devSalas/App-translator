@@ -49,7 +49,7 @@ const TraduceAhora = () => {
     <div className={styled.container}>
 
       <h2 className={styled.h2}>TRADUCE ALTOQUE</h2>
-      <h4>presione <span><img className={styled.keyboard} src="/src/assets/enter.jpg" alt="" /></span> para comenzar a traducir</h4>
+      <h4>presione <span><img className={styled.keyboard} src="/enter.jpg" alt="" /></span> para comenzar a traducir</h4>
       
       <div className={styled.contentToTraslate}>
 
