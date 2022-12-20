@@ -7,7 +7,7 @@
   padding: 5%;
   margin: auto;
   place-items: center;
-  background-color: rgb(227, 227, 233);
+  background-color: rgba(227, 227, 233, 0.952);
   border-radius: 30px;
 }
 .select{
